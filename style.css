@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#navbar{
+    display: flex;
+    width: 85%;
+    margin-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#logo{
+    width: 130px;
+}
+.listitem{
+    list-style: none;
+    display: inline; 
+    margin: 10px 20px; /* top and bottom */
+    font-weight: 700;
+}
+li a:hover{
+    color: rgb(0, 0, 0);/* pseudoclass */
+}
+li a{  /* descendent selector */
+    text-decoration: none;
+    color: #ffffff;
+}
+#title{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+#title h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#title a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+#images{
+    width: 45%;
+    height: 80%;
+    position: absolute; /* will be placed to the parent component having position relative ie container in this situation */
+    bottom: 0px;
+    right: 30px;
+
+}
+.imagegroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;  /* if given left it goes to right */
+    transform: translate(-50%);
+    transition: bottom 1s, left 2s;
+    
+}
+
+#images:hover #shape{
+    bottom: 70px;
+
+}
+
+#images:hover #girl{
+    left: 40%;
+    
+}
+
+#title{
+    margin-left: 8%;
+}
+#about{
+    margin: 14% 8% 0 8%;
+
+}
+#heading{
+    text-align: center;
+
+}
+#heading h2{
+    font-size: 30px;
+}
+#heading h3{
+    font-size: 20px;
+    color: green;
+}
+#content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;  /* rem is unit related to html font size; 1rem=16px; if font size is not given 16px is the default value */
+}
+#content-img img{
+    width: 80%;
+}
+#content_details{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+}
+#informations{
+    margin-top: 1rem;
+}
+.info{
+    margin-top: 1rem;
+}
+.info span{
+    margin-left: 1rem;
+}
